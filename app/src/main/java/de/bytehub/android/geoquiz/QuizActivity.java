@@ -60,10 +60,8 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (mCurrentIndex == 0) {
                     mCurrentIndex = mQuestionBank.length;
-                    System.out.println(mCurrentIndex);
                 }
                 mCurrentIndex = (mCurrentIndex - 1) % mQuestionBank.length;
-                System.out.println(mCurrentIndex + " und " + mQuestionBank.length);
                 updateQuestion();
             }
         });
